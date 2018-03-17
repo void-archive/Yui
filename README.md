@@ -4,6 +4,7 @@ Yui Hirasawa is a discord bot made in the [Eris](https://abal.moe/Eris) library.
 
 ## Installation
 Requirements:
+
     * Node.js — The runtime environment;
     * Git — The service to get the bot;
     * RethinkDB — Yui's database;
@@ -17,15 +18,11 @@ API Keys:
     * `blspace`
     * `terminal`
 
-```sh
-$ git clone https://github.com/ohlookitsAugust/Yui.git && cd Yui
-$ npm i -g yarn pm2 # Uses later.
-$ yarn install
-# w/ PM2
-$ pm2 start src/Yui.js --name="Yui"
-# w/o PM2
-$ npm start
-```
+* `git clone https://github.com/ohlookitsAugust/Yui.git && cd Yui`
+* `npm i -g yarn pm2 # Uses later.`
+* `yarn install`
+* `pm2 start src/Yui.js --name="Yui"`
+* or `npm start`
 
 ## Support
 We will not give you support about cloning Yui! If you need other support, you can join **August's Humble Abode** discord server to get support.
