@@ -1,4 +1,4 @@
-# Yui Hirasawa [![Discord](https://discordapp.com/api/guilds/382725233695522816/embed.png?style=banner2)](https://discord.gg/xz3w7YG) [![Discord Bots](https://discordbots.org/api/widget/servers/412014529099333642.png)](https://discordbots.org/bot/412014529099333642) [![Discord Bots](https://discordbots.org/api/widget/status/412014529099333642.png)](https://discordbots.org/bot/412014529099333642) [![Discord Bots](https://discordbots.org/api/widget/owner/412014529099333642.png)](https://discordbots.org/bot/412014529099333642) [![Travis](https://img.shields.io/travis/ohlookitsAugust/Yui.svg?style=flat-square)](https://travis-ci.org/ohlookitsAugust/Yui)
+# Yui Hirasawa [![Discord](https://discordapp.com/api/guilds/382725233695522816/embed.png)](https://discord.gg/xz3w7YG) [![Discord Bots](https://discordbots.org/api/widget/servers/412014529099333642.png)](https://discordbots.org/bot/412014529099333642) [![Discord Bots](https://discordbots.org/api/widget/status/412014529099333642.png)](https://discordbots.org/bot/412014529099333642) [![Discord Bots](https://discordbots.org/api/widget/owner/412014529099333642.png)](https://discordbots.org/bot/412014529099333642) [![Travis](https://img.shields.io/travis/ohlookitsAugust/Yui.svg?style=flat-square)](https://travis-ci.org/ohlookitsAugust/Yui)
 
 Yui Hirasawa is a discord bot made in the [Eris](https://abal.moe/Eris) library.
 
@@ -10,6 +10,7 @@ Requirements:
     * Nginx (Optional) — Webserver.
 
 API Keys:
+
     * `osu!`
     * `oliyBots`
     * `discordBots`
@@ -31,7 +32,7 @@ We will not give you support about cloning Yui! If you need other support, you c
 
 [![August's Humble Abode Discord](https://discordapp.com/api/guilds/382725233695522816/embed.png?style=banner2)](https://discord.gg/xz3w7YG)
 
-[![Discord Bots](https://discordbots.org/api/widget/owner/412014529099333642.svg)](https://discordbots.org/bot/412014529099333642)
+[![Discord Bots](https://discordbots.org/api/widget/412014529099333642.svg)](https://discordbots.org/bot/412014529099333642)
 
 ## Credits
 * [Aetheryx (Aether)](https://github.com/Aetheryx) — [`MessageCollector`](https://github.com/ohlookitsAugust/Yui/blob/master/src/util/MessageCollector.js) class.
