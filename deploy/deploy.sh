@@ -22,15 +22,15 @@ if [ -n "$TRAVIS_TAG" ]; then
 	DOCKER_RELEASE="$TRAVIS_TAG"
 	test
 	docker login --username="$DOCKER_USERNAME" --password="$DOCKER_PASSWORD"
-	docker build -t senpai .
-	docker tag senpai:"$DOCKER_RELEASE" august/yui:"$DOCKER_RELEASE"
+	docker build -t yui .
+	docker tag yui:"$DOCKER_RELEASE" august/yui:"$DOCKER_RELEASE"
 	docker push august/yui:"$DOCKER_RELEASE"
 else
 	echo -e "\e[36m\e[1mBuild triggered for branch \"${TRAVIS_BRANCH}\"."
 	DOCKER_RELEASE="$TRAVIS_BRANCH"
 	test
 	docker login --username="$DOCKER_USERNAME" --password="$DOCKER_PASSWORD"
-	docker build -t senpai .
-	docker tag senpai:latest august/yui:"$DOCKER_RELEASE"
+	docker build -t yui .
+	docker tag yui:latest august/yui:"$DOCKER_RELEASE"
 	docker push august/yui:"$DOCKER_RELEASE"
 fi
