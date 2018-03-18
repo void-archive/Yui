@@ -15,5 +15,13 @@ module.exports = {
                 server_count: bot.guilds.size
             })
             .end();
+
+        bot._snek
+            .post(`https://ls.terminal.ink/api/v1/bots/${bot.user.id}`)
+            .set('Authorization', bot.config.tokens.blspace)
+            .send({
+                server_count: bot.guilds.size
+            })
+            .end();
     }
 }

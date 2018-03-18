@@ -1,8 +1,8 @@
 module.exports = class Event {
     constructor(bot, {
-        eventName = null
+        name = null
     }) {
         this.bot = bot;
-        this.uwu = { eventName };
+        this.uwu = { name };
     }
 }

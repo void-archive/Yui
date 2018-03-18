@@ -1,6 +1,7 @@
 const YuiClient = require('./client/YuiClient');
+const config = require('./config.json');
 
-const bot = new YuiClient(process.env.TOKEN, {
+const bot = new YuiClient(config.tokens.Discord, {
     disableEveryone: true,
     autoReconnect: true
 });
