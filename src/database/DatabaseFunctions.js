@@ -57,5 +57,12 @@ module.exports = bot = ({
                 isPremium: false
             })
             .run();
+    },
+    isPatreonGuild: (guildID) => {
+        const res = bot.db.table('guilds')
+            .get(guildID)
+            .run();
+
+        return Boolean(res.isPatreonGuild);
     }
 });

@@ -16,7 +16,6 @@ module.exports = {
 
         // Permission-wise
         // Credit: https://github.com/Devoxin/JukeBot-JS
-
         Object.defineProperty(Eris.GuildChannel.prototype, 'hasPermissions', {
             value(user, ...permissions) {
                 let check = true;
