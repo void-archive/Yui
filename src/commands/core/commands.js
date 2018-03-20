@@ -23,7 +23,7 @@ module.exports = class CommandsCommand extends Command {
             let category = categories[cmd.options.category];
             if (!category) category = categories[cmd.options.category] = [];
 
-            categories.push(cmd.options.name);
+            category.push(cmd.options.name);
         }
     
         return msg.channel.createMessage({ embed: {

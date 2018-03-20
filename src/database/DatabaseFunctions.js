@@ -1,8 +1,8 @@
 module.exports = bot = ({
-    createGuild: async(guild) => {
+    createGuild: async(guildID) => {
         await bot.db.table('guilds')
             .insert({
-                id: guild.id,
+                id: guildID,
                 prefix: bot.config.prefix,
                 disabledCommands: [],
                 modlog: null,
@@ -12,7 +12,7 @@ module.exports = bot = ({
             })
             .run();
 
-        return this.getGuild(guild.id);
+        return this.getGuild(guildID);
     },
     deleteGuild: (guildID) => {
         return bot.db.table('guilds')

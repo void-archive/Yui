@@ -13,7 +13,7 @@ module.exports = class GuildJoinedEvent extends Event {
         this.bot.botlists.post(this.bot);
         this.bot.log.debug(`Joined ${guild.name} (${guild.id}), now at ${this.bot.guilds.size} guilds.`);
 
-        this.bot.setInterval(this.dogame, 60000); // Set the guild counter.
+        this.bot.setInterval(this.doGame, 60000); // Set the guild counter.
     }
 
     doGame() {
