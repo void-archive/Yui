@@ -2,8 +2,5 @@
 node_modules/*
 
 # Yui
-src/client/PatreonClient.js
-src/config.json
-
-# Lavalink
+config.json
 lavalink/*

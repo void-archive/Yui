@@ -1,10 +1,14 @@
-const games = [
-    'Havana best bot',
-    'Discord Emoji best bot',
-    'K-ON! best anime',
-    'CF is my best friend!',
-    'on Github',
-    'Rethinking your Database...'
-];
+const games = [];
+const changeGame = (bot) => {
+    bot.editStatus('online', {
+        name: `${bot.config.prefix}help | [${bot.guilds.size}] | ${games[Math.floor(Math.random() * games.length)]}`,
+        type: 0
+    });
 
-module.exports = { games };
+    bot.setInterval(changeGame, 60000);
+}
+
+module.exports = {
+    games,
+    changeGame
+};
