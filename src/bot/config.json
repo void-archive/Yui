@@ -1,0 +1,26 @@
+{
+    "prefix": "yui!",
+    "tokens": {
+        "Discord": "NDEyMDE0NTI5MDk5MzMzNjQy.DYDUXA.Va66fsIqPzVd351d_MP4NU-FxDg",
+        "oliyBots": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQxMjAxNDUyOTA5OTMzMzY0MiIsImJvdCI6dHJ1ZSwiaWF0IjoxNTE5NDUzNzI5fQ.d54Q_HqKjvAw8G56cwa4y72t6BHqgdUXDpkLoPWyETc",
+        "blspace": "9e7ca08d1befd57bd2f4969b453fafdf3860c9e70edc4843cdd73a8e7519ce73805c3c9cf503a8f62baee4abbedca35cf4e033ac816ed0ee08523b3028c14853",
+        "osu": "f07de0b931e6e2c9f2308a7456e78a16babafaa8",
+        "terminal": "16518171eaa3e0f0698f44f7329b8ff73c3cc749e0d24fc574b9b8a10d594c4bed71c84d08d768f43aa4151ac89ad7ff2c0e2bbc4acc9122187dfdbbe8bb3273"
+    },
+    "embed": {
+        "footer": "Yui Hirasawa - A Discord Bot"
+    },
+    "devs": ["280158289667555328", "145557815287611393"],
+    "links": {
+        "discord": "",
+        "weebhook": "https://discordapp.com/api/webhooks/420786960299458560/ESbXT81TFrW8P4h0BMmzct9hWsrHfeCAoneV6MbeAbDhQWp79SUB3TXYGB61qAI1khK9"
+    },
+    "channels": {
+        "logging": "419729244806184971"
+    },
+    "rethinkdb": {
+        "db": "Yui",
+        "host": "localhost",
+        "port": 28015
+    }
+}

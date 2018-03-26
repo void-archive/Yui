@@ -1,6 +1,4 @@
-# Node.js
+src/config.json
 node_modules/*
-
-# Yui
-config.json
-lavalink/*
+src/bot/client/PatreonClient.js
+src/Patreon.js
