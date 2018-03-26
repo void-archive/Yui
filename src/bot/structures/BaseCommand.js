@@ -1,5 +1,3 @@
-const CommandError = require('../../errors/CommandError');
-
 /**
  * The base command
  */
@@ -39,6 +37,6 @@ module.exports = class BaseCommand {
      * @param {String[]} args The arguments provided
      */
     async run(msg) {
-        throw new CommandError('NO_RUN_FUNCTION');
+        throw new Error('There isnt shit overriding a run() method!');
     }
 }

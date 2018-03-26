@@ -45,7 +45,7 @@ module.exports = class YuiClient extends Eris {
      * Run the bot
      * @returns The bot running..
      */
-    async run() {
+    async start() {
         await this._load();
         
         this.connect().then(() => {
