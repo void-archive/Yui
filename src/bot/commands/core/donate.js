@@ -8,14 +8,13 @@ module.exports = class DonateCommand extends Command {
             usage: 'donate',
             aliases: ['patreon'],
             examples: ['donate', 'patreon'],
-            category: 'General'
         });
     }
 
     async run(msg, args) {
         return msg.channel.createMessage({ embed: {
             title: "Yui Hirasawa - Donations",
-            description: "I do accept donations but you will be blacklisted from the bot if you chargeback.",
+            description: ":warning: If you chargeback after the payment, you will be blacklisted.\nLink: https://patreon.com/YuiBotProject",
             color: this.bot.utils.colour()
         }});
     }

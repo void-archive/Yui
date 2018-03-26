@@ -14,16 +14,14 @@ module.exports = class PingCommand extends Command {
             desc: 'Wanna play some Ping Pong? uwu',
             usage: 'ping',
             aliases: ['pong'],
-            category: "General"
         });
     }
 
     async run(msg, args) {
         const message = await msg.channel.createMessage(responses[Math.floor(Math.random() * responses.length)]);
-
         const ping = msg.channel.guild.shard;
 
         await message.delete();
-        msg.channel.createMessage('**[Ping]**: Done playing with Discord!\n\tMessage: `' + message - msg.createdTimestamp + 'ms`\n\tWebSocket: `' + ping.latency + "ms`");
+        msg.channel.createMessage(':hehe: `|` Done playing with Discord!\n\t:ribbon: Message: `' + message.createdTimestamp - msg.createdTimestamp + 'ms`\n\t:ribbon: WS: `' + ping.latency + "ms`");
     }
 }

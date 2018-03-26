@@ -32,8 +32,7 @@ module.exports = class YuiClient extends Eris {
         this.fails = 0;
         this._snek = require('snekfetch');
         //this.webhook = new Webhooks(this);
-        //this.db = require('../../database/RethinkDB');
-        this._hd = require('humanize-duration');
+        //this.r = require('../../database/RethinkDB');
         this.version = require('../../../package.json').version;
         this._osu = new Osu.Api(this.config.tokens.osu, {
             notFoundAsError: true,

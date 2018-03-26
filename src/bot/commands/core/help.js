@@ -1,5 +1,4 @@
 const Command = require('../../structures/BaseCommand');
-const fs = require('fs');
 
 module.exports = class HelpCommand extends Command {
     constructor(bot) {
@@ -9,7 +8,6 @@ module.exports = class HelpCommand extends Command {
             usage: 'help [<command:str>]',
             aliases: ['halp', 'h', '?'],
             examples: ['help', '? statistics'],
-            category: 'General'
         });
     }
 
@@ -34,16 +32,53 @@ module.exports = class HelpCommand extends Command {
             return msg.channel.createMessage({embed: {
                 title: "Yui Hirasawa - Help Panel",
                 description: this.bot.utils.helpDesc(this.bot),
-                fields: Object.keys(categories).map(c => ({ name: `❯ ${c}`, value: `\`${categories[c].join("` `")}\`` })),
+                fields: Object.keys(categories).map(c => ({ name: `❯ ${c} [\`${c.length}\`]`, value: `\`${categories[c].join("` `")}\`` })),
                 footer: {
-                    text: "Yayy! I hope you have fun with me =w= // Use " + this.bot.config.prefix + "help <command> to get help on a command!"
+                    text: "Yayy! I hope you have fun with me =w= // Use " + this.bot.config.prefix + "help <command> to get help on a command! // " + this.bot.fails + "/" + this.bot.commands.length + " commands loaded!"
                 },
                 color: this.bot.utils.colour()
             }});
         } else {
-            const command = this.bot.commands.find(c => c.options.name.includes(args[0]));    
+            const command = this.bot.commands.find(c => c.options.name.includes(args[0])); 
+
             try {
-                return msg.channel.createMessage(`__**Command \`${command.options.name}\`**__\n\tDescription: ${command.options.desc ? `${command.options.desc}` : `**No description...**`}\n\tUsage: ${command.options.usage ? `${this.bot.config.prefix}${command.options.usage}` : "**No usages...**"}\n\tCategory: ${command.options.category ? `**${command.options.category}**` : "General"}\n\tAliases: ${command.options.aliases === null ? `${command.options.aliases.join(", ")}` : "No aliases..."}\n\tExamples: ${command.options.examples === null ? command.options.examples.join(", ").replace("{prefix}", this.bot.config.prefix) : "No examples avaliable..."}`);
+                return msg.channel.createMessage({ embed: {
+                    title: "Yui Hirasawa - Extended Help",
+                    description: `:ribbon: Command \`${command.options.name}\``,
+                    fields: [{
+                        name: "❯ Description",
+                        value: command.options.desc
+                    },
+                    {
+                        name: "❯ Usage",
+                        value: `\`${this.bot.config.prefix}${command.options.usage}\``
+                    },
+                    {
+                        name: "❯ Category",
+                        value: `${command.options.category ? command.options.category : "Core"}`
+                    },
+                    {
+                        name: "❯ Aliases",
+                        value: `${command.options.aliases ? command.options.aliases.join(', ') : "No aliases founded..."}`
+                    },
+                    {
+                        name: "❯ Examples",
+                        value: `${command.options.examples ? command.options.examples.join(', ') : "No examples..."}`
+                    },
+                    {
+                        name: "❯ Guild Only",
+                        value: `${command.options.isGuild}`
+                    },
+                    {
+                        name: "❯ Owner Only",
+                        value: `${command.options.isOwner}`
+                    },
+                    {
+                        name: "❯ NSFW?",
+                        value: command.options.isNSFW
+                    }],
+                    color: this.bot.utils.colour()
+                }});
             } catch(err) {
                 msg.channel.createMessage('**[GeneralError]**: Command `' + args[0] + '` wasn\'t found.');
             }

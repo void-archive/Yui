@@ -10,7 +10,6 @@
         "ejs": "2.5.7",
         "eris": "0.8.5",
         "express": "4.16.2",
-        "humanize-duration": "3.12.1",
         "kitsu": "5.0.4",
         "moment": "2.21.0",
         "node-opus": "0.2.7",

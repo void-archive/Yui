@@ -8,7 +8,6 @@ module.exports = class StatisticsCommand extends Command {
             desc: 'Want some statistics, big boi?',
             usage: 'statistics',
             examples: ['statistics', 'bot', 'stats'],
-            category: 'General',
             aliases: ['stats', 'bot']
         });
     }
@@ -18,6 +17,7 @@ module.exports = class StatisticsCommand extends Command {
 
         msg.channel.createMessage({ embed: {
             title: "Yui Hirasawa - Statistics",
+            description: `Uptime: ${this.bot.utils.format(this.bot.uptime)}`,
             fields: [{
                 name: "Guilds",
                 value: this.bot.guilds.size,
@@ -31,13 +31,6 @@ module.exports = class StatisticsCommand extends Command {
             {
                 name: "Channels",
                 value: Object.keys(this.bot.channelGuildMap).length,
-                inline: true
-            },
-            {
-                name: "Bot Uptime",
-                value: this.bot._hd(this.bot.uptime, {
-                    round: true
-                }),
                 inline: true
             },
             {
