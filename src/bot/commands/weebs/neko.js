@@ -9,7 +9,7 @@ module.exports = class NekoCommand extends AbstractCommand {
             aliases: ['catgirl'],
             examples: ['catgirl', 'neko'],
             category: 'Weebs',
-	    isNSFW: true
+	        isNSFW: true
         });
     }
 

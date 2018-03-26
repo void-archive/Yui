@@ -17,9 +17,9 @@ module.exports = class OsuCommand extends Command {
             return msg.channel.createMessage(`**[ArgumentError]**: Usage: \`${this.options.usage}\``);
         }
 
-            const message = await msg.channel.createMessage(`**[OSU!]**: Searching for \`${args[1]}\``);
+            const message = await msg.channel.createMessage(`**[OSU!]**: Searching for \`${args[0]}\``);
 
-            const usr = await this.bot._osu.getUser({ u: args[1] });
+            const usr = await this.bot._osu.getUser({ u: args[0] });
 
             await message.delete();
             msg.channel.createMessage({ embed: {
@@ -61,7 +61,7 @@ module.exports = class OsuCommand extends Command {
 		}],
                 color: this.bot.utils.colour(),
 		image: {
-			url: `https://lemmmy.pw/osusig/sig.php?uname=${encodeURI(username)}`
+			url: `https://lemmmy.pw/osusig/sig.php?uname=${encodeURI(args[0])}`
 		}
             }}); 
      }

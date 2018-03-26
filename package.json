@@ -1,7 +1,7 @@
 {
     "name": "yuibot",
     "description": "Yui Hirasawa is a cute discord bot made in the Eris library! =w=",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "dependencies": {
         "aids": "0.1.0",
         "bluebird": "3.5.1",
