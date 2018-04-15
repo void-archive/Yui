@@ -1,40 +1,40 @@
 ![Yui Banner](https://natsukibot-is.a-bad-me.me/nZquBZXgP.gif)
 
 # Yui Hirasawa [![Discord](https://discordapp.com/api/guilds/382725233695522816/embed.png)](https://discord.gg/Bkh4F5W)
-Yui Hirasawa is a multimodular discord bot made in the [Eris](https://abal.moe/Eris) library
+Yui Hirasawa is a multi-modular Discord bot made in the [Eris](https://abal.moe/Eris) library.
 
 ## Installation
-Since Yui is tedious to install, I won't help nor the discord server will either. But, if you really do you will need to credit me since it's nessary or a request of takedown will be taken into action. | You must follow the `Apache 2.0` license's guidelines. Your Yui must be open source.
+Since Yui is tedious to install, I won't help nor will the Discord server. But if you desperately need to, you'll need to credit me (August) or a request of takedown will be put into action. | You must read and agree to the `Apache 2.0` license. Your instance of Yui must also be open-source.
 
 You will need:
 ```
-    Node.js - The Bot's runtime enviroment
-    Git - To clone the git repository
-    RethinkDB - Our Database
-    Some API keys:
-        DiscordBotList API 
-            This is optional, if the bot doesn't have it, it won't upload.
-        DiscordBots API 
-            This is optional, if the bot doesn't have it, it won't upload.
-        BotList API
-            This is optional.
-        Terminal API
-            This is optional.
-        YouTube API
-            The music category will not be enabled if the API key isn't set.
-        osu! API 
-            The osu! command will not be enabled if the API key isn't set
+Node.js - The Bot's runtime enviroment.
+Git - To clone the git repository.
+RethinkDB - Our Database.
+
+Some API keys:
+    DiscordBotList API 
+        - This is optional, if the bot doesn't have it, it won't upload.
+    DiscordBots API 
+        - This is optional, if the bot doesn't have it, it won't upload.
+    BotList API
+        - This is optional.
+    Terminal API
+        - This is optional.
+    YouTube API
+        - The music category will not be enabled if the API key isn't set.
+    osu! API 
+        - The osu! command will not be enabled if the API key isn't set.
 ```
         
-We do provide a Dockerfile but that installation process will be soon:tm:.
-
-If you need other support (**NOT CLONING THE BOT**); You can go on our discord server!
+We do provide a Dockerfile but that installation process will be soon:tm:.  
+If you need general bot support, you may join the Discord server.
 
 [![Yui's Discord Server](https://discordapp.com/api/guilds/382725233695522816/embed.png?style=banner3)](https://discord.gg/Bkh4F5W)
 
 ## License
 ```
-   Copyright 2018-* August (Chris)
+   Copyright 2018- * August (Chris)
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
